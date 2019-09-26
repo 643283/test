@@ -1,0 +1,67 @@
+p{
+	color:Black;
+	font-size: 20px;
+}
+h1{
+   font-size: 40px;
+   text-align: center;
+   font-style: italic;
+}
+body{
+	background-color: pink;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e755aa;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #555;
+} 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff4a6a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 2.5em;
+}
+
+.button:hover {background-color: #ff5e7a}
+
+.button:active {
+  background-color: #ff859a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#img{
+  text-align: center;
+  margin-top: 5em
+}
+#buttons{
+  text-align: center;
+  margin-top: 5em;
+}
