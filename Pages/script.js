@@ -35,3 +35,38 @@ function tenfour(){
 	else {console.log (x)}
 	}
 }
+function encryption(){
+	let plainText = prompt("enter your message")
+	var alphabet = 'a/b=c+d$efgh^ijkl*mn?op#qr&stu@vw,x!y zABCDEFGHIJKLMNOPQRSTUVWXYZ-_()`~%'.split('');
+	let cypherText = ""
+	let letterNum = 0
+	for (var i = 0; i < plainText.length; i++) {
+		console.log(plainText[i % 72])
+		letterNum = (alphabet.indexOf(plainText[i]))
+		console.log(letterNum);
+		console.log(letterNum+3)
+		cypherText += alphabet[(letterNum+3) % 72]
+		console.log(cypherText)
+	}
+	 document.getElementById("cypher").innerHTML = cypherText;
+}
+function decryption(){
+	let cypherText = prompt("enter your message")
+	var alphabet = 'a/b=c+d$efgh^ijkl*mn?op#qr&stu@vw,x!y zABCDEFGHIJKLMNOPQRSTUVWXYZ-_()`~%'.split('');
+	let plainText = ""
+	let letterNum = 0
+	for (var i = 0; i < cypherText.length; i++) {
+			letterNum = (alphabet.indexOf(cypherText[i]))
+	if (alphabet.indexOf(cypherText[i]) < 3){
+		plainText += alphabet[(letterNum-3) + 72]
+	}
+	else {
+		console.log(cypherText[i])
+		console.log(letterNum);
+		console.log(letterNum-3)
+		plainText += alphabet[(letterNum-3)]
+		console.log(plainText)
+	}
+	}
+	 document.getElementById("plain").innerHTML = plainText;
+}
